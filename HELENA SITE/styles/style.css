@@ -1,0 +1,184 @@
+/* Color Theme Swatches in Hex */
+.UI/UX-1-hex { color: #8C8C8C; }
+.UI/UX-2-hex { color: #595959; }
+.UI/UX-3-hex { color: #404040; }
+.UI/UX-4-hex { color: #262626; }
+.UI/UX-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.UI/UX-1-rgba { color: rgba(140, 140, 140, 1); }
+.UI/UX-2-rgba { color: rgba(89, 89, 89, 1); }
+.UI/UX-3-rgba { color: rgba(63, 63, 63, 1); }
+.UI/UX-4-rgba { color: rgba(38, 38, 38, 1); }
+.UI/UX-5-rgba { color: rgba(12, 12, 12, 1); }
+
+/* Color Theme Swatches in HSLA */
+.UI/UX-1-hsla { color: hsla(0, 0, 55, 1); }
+.UI/UX-2-hsla { color: hsla(0, 0, 35, 1); }
+.UI/UX-3-hsla { color: hsla(0, 0, 25, 1); }
+.UI/UX-4-hsla { color: hsla(0, 0, 15, 1); }
+.UI/UX-5-hsla { color: hsla(0, 0, 5, 1); }
+
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Gabarito:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*                          */
+/*         HEADER           */
+/*                          */
+/*  */
+header{
+    max-width: 100%;
+    height: 75vh;
+    background:linear-gradient(rgba(0,0,0,0.67), rgba(0,0,0,0.1)) ,url(../images/helena\ 2.jpg);
+    background-repeat: no-repeat;
+    background-color: #040805ff;
+    position: relative;
+    
+}
+header nav#nav-esq div#logo img{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+header p{
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 60vw;
+    height: 30vh;
+        
+}
+#typewriter {
+    font-size: 1.2rem;
+    overflow: hidden;
+    border-right: 2px solid white;
+    animation: blinkCursor 0.100s step-end infinite;
+    color: white;             /* 👈 isso resolve o problema da cor */
+    text-align: center;
+    margin: 0 auto;           /* 👈 centraliza horizontalmente */
+    
+  }
+#paragrafo{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    margin-top: 5%;
+    margin-left: 40%;
+}
+
+
+/*                          */
+/*         NAVEBAR          */
+/*                          */
+
+header nav#nav-esq{
+    width: 100%;
+    height: 110px;
+    background-color: #040805ff;
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+header nav#nav-esq div#logo{
+    width: 100px;
+    height: 120px;
+    margin-left: 5rem ;
+}
+/*                          */
+/*     MENU HAMBURGUER      */
+/*                          */
+
+header nav#nav-esq ul#icone-menu{
+    display: none;
+
+}
+header nav#nav-esq ul#icone-menu li{
+    list-style: none;
+    color: white;
+    font-size: 50px;
+    margin-right: 2rem;
+}
+header nav#nav-esq ul#menu-principal{
+    margin-left: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+}
+header nav#nav-esq ul#menu-principal li{
+    list-style: none;
+    margin-right: 2rem;
+}
+header nav#nav-esq ul#menu-principal li a{
+    text-decoration: none;
+    color: white;
+    font-size: 100%;
+    text-shadow: 4px 6px 10px rgb(128, 105, 48);
+    padding-bottom: 10px;
+    transition: .3s ease-out;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+header nav#nav-esq ul#menu-principal li a:hover{
+    border-bottom: 1px solid rgb(128, 105, 48);
+    color: rgb(128, 105, 48) ;
+}
+
+    
+
+#background{
+    filter: brightness(0.1) contrast(0.8);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.card {
+
+    position: absolute; /* Sobrepõe a imagem de fundo */
+    top: 60%; /* Posiciona no centro vertical */
+    margin-top: -40%;
+    left: 15%; /* Posiciona no centro horizontal */
+    transform: translate(-50%, -50%); /* Centraliza precisamente */
+    width: 300px; /* Largura do card */
+    padding: 20px;
+    background: white;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    z-index: 1; /* Garante que o card fique acima da imagem */
+}
+.card1 {
+    position: absolute; /* Sobrepõe a imagem de fundo */
+    top: 70%; /* Posiciona no centro vertical */
+    left: 85%; /* Posiciona no centro horizontal */
+    transform: translate(-50%, 80%); /* Centraliza precisamente */
+    width: 300px; /* Largura do card */
+    padding: 20px;
+    background: white;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    z-index: 1; /* Garante que o card fique acima da imagem */
+}
+#imagem{
+    position: absolute; /* Sobrepõe a imagem de fundo */
+    top: 70%; /* Posiciona no centro vertical */
+    left: 45%; /* Posiciona no centro horizontal */
+    transform: translate(-50%, 35%); /* Centraliza precisamente */
+    width: 300px; /* Largura do card */
+    padding: 20px;
+    background: white;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    z-index: 1; /* Garante que o card fique acima da imagem */
+}
+   

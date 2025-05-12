@@ -1,0 +1,90 @@
+/*                          */
+/*         HEADER           */
+/*                          */
+/*                          */
+/*         NAVEBAR          */
+/*                          */
+@media screen and (max-width: 630px) {
+/*                          */
+/*     MENU HAMBURGUER      */
+/*                          */
+    header nav#nav-esq{
+        justify-content: space-between;
+    }
+    header nav#nav-esq ul#icone-menu{
+        display: flex;
+
+    }
+    header nav#nav-esq ul#icone-menu{
+        display: flex;
+    }
+    header nav#nav-esq ul#icone-menu li#menuX{
+        display: none;
+
+    }
+
+    /* MENU */
+    header nav#nav-esq ul#menu-principal{
+        flex-direction: column;
+        width: 80vw;
+        height: 100vh;
+        background: linear-gradient(rgb(128, 105, 48),rgb(155, 145, 120),rgb(85, 69, 27));
+        padding-top: .5rem;
+
+        position: absolute;
+        top: 11vh;
+        right: 0;
+        z-index: 999;
+
+        display: none;
+    }
+    header nav#nav-esq ul#menu-principal li{
+        margin: .5rem;
+        margin-left: 1rem;
+    }
+    header nav#nav-esq ul#menu-principal li a{
+        font-size: 120%;
+    }
+    #menu-principal.ativo {
+        display: flex;
+        animation: descer 0.4s ease forwards;
+      }
+      
+      /* Animação deslizante */
+      @keyframes descer {
+        from {
+          transform: translateY(-20%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      
+      /* Ícones */
+      #icone-menu {
+        list-style: none;
+      }
+      #icone-menu li {
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        user-select: none;
+      }
+    
+      @keyframes subir {
+        from {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        to {
+          transform: translateY(-20%);
+          opacity: 0;
+        }
+      }
+      
+      #menu-principal.saindo {
+        animation: subir 0.4s ease forwards;
+      }
+}
